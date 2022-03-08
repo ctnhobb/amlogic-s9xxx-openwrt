@@ -38,8 +38,8 @@ svn co https://github.com/xiaorouji/openwrt-passwall/trunk package/openwrt-passw
 # Add p7zip
 svn co https://github.com/hubutui/p7zip-lede/trunk package/p7zip
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
-ls /home/runner/work/amlogic-s9xxx-openwrt/
-ls /home/runner/work/
+
+find /home/runner/work/ -name passwall.po
 mv /home/runner/work/amlogic-s9xxx-openwrt/luci-app-passwall package/
 # Fix runc version error
 # rm -rf ./feeds/packages/utils/runc/Makefile
